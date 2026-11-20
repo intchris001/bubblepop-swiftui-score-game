@@ -1,0 +1,28 @@
+name: BubblePop
+options:
+  bundleIdPrefix: com.chris
+  createSharedSchemes: true
+targets:
+  BubblePop:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: [BubblePop]
+    settings:
+      SUPPORTED_PLATFORMS: "iphonesimulator iphoneos"
+      SDKROOT: "iphoneos"
+    info:
+      path: BubblePop/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
